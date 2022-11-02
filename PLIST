@@ -1,7 +1,11 @@
-@comment $NetBSD: PLIST,v 1.6 2017/07/23 22:30:03 schmonz Exp $
+@comment $NetBSD: PLIST,v 1.9 2022/01/19 17:50:47 wiz Exp $
 bin/tls${PYVERSSUFFIX}.py
 bin/tlsdb${PYVERSSUFFIX}.py
-${PYSITELIB}/${EGG_FILE}
+${PLIST.py2x}${PYSITELIB}/${EGG_INFODIR}
+${PLIST.py3x}${PYSITELIB}/${EGG_INFODIR}/PKG-INFO
+${PLIST.py3x}${PYSITELIB}/${EGG_INFODIR}/SOURCES.txt
+${PLIST.py3x}${PYSITELIB}/${EGG_INFODIR}/dependency_links.txt
+${PLIST.py3x}${PYSITELIB}/${EGG_INFODIR}/top_level.txt
 ${PYSITELIB}/tlslite/__init__.py
 ${PYSITELIB}/tlslite/__init__.pyo
 ${PYSITELIB}/tlslite/__init__.pyc
